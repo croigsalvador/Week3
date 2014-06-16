@@ -19,6 +19,11 @@
 		1DB3AB23194EE05900537E93 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DB3AB0B194EE05800537E93 /* UIKit.framework */; };
 		1DB3AB2B194EE05900537E93 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3AB29194EE05900537E93 /* InfoPlist.strings */; };
 		1DB3AB2D194EE05900537E93 /* Semana3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3AB2C194EE05900537E93 /* Semana3Tests.m */; };
+		1DB3AB38194EE09900537E93 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3AB37194EE09900537E93 /* MainViewController.m */; };
+		1DB3AB3B194EE0BA00537E93 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3AB3A194EE0BA00537E93 /* Storyboard.storyboard */; };
+		1DB3AB3D194EE1E100537E93 /* View.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB3AB3C194EE1E100537E93 /* View.storyboard */; };
+		1DB3AB41194EE32500537E93 /* ViewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3AB40194EE32500537E93 /* ViewsTableViewController.m */; };
+		1DB3AB44194EE33F00537E93 /* DetailsViewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DB3AB43194EE33F00537E93 /* DetailsViewsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,14 @@
 		1DB3AB28194EE05900537E93 /* Semana3Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Semana3Tests-Info.plist"; sourceTree = "<group>"; };
 		1DB3AB2A194EE05900537E93 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1DB3AB2C194EE05900537E93 /* Semana3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Semana3Tests.m; sourceTree = "<group>"; };
+		1DB3AB36194EE09900537E93 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		1DB3AB37194EE09900537E93 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		1DB3AB3A194EE0BA00537E93 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		1DB3AB3C194EE1E100537E93 /* View.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = View.storyboard; sourceTree = "<group>"; };
+		1DB3AB3F194EE32500537E93 /* ViewsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewsTableViewController.h; sourceTree = "<group>"; };
+		1DB3AB40194EE32500537E93 /* ViewsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewsTableViewController.m; sourceTree = "<group>"; };
+		1DB3AB42194EE33F00537E93 /* DetailsViewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewsViewController.h; sourceTree = "<group>"; };
+		1DB3AB43194EE33F00537E93 /* DetailsViewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,10 +120,9 @@
 		1DB3AB0D194EE05800537E93 /* Semana3 */ = {
 			isa = PBXGroup;
 			children = (
-				1DB3AB16194EE05800537E93 /* AppDelegate.h */,
-				1DB3AB17194EE05800537E93 /* AppDelegate.m */,
-				1DB3AB19194EE05800537E93 /* Images.xcassets */,
 				1DB3AB0E194EE05800537E93 /* Supporting Files */,
+				1DB3AB39194EE09D00537E93 /* Controller */,
+				1DB3AB3E194EE1EE00537E93 /* Storyboards */,
 			);
 			path = Semana3;
 			sourceTree = "<group>";
@@ -118,6 +130,9 @@
 		1DB3AB0E194EE05800537E93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1DB3AB16194EE05800537E93 /* AppDelegate.h */,
+				1DB3AB17194EE05800537E93 /* AppDelegate.m */,
+				1DB3AB19194EE05800537E93 /* Images.xcassets */,
 				1DB3AB0F194EE05800537E93 /* Semana3-Info.plist */,
 				1DB3AB10194EE05800537E93 /* InfoPlist.strings */,
 				1DB3AB13194EE05800537E93 /* main.m */,
@@ -142,6 +157,28 @@
 				1DB3AB29194EE05900537E93 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DB3AB39194EE09D00537E93 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3AB36194EE09900537E93 /* MainViewController.h */,
+				1DB3AB37194EE09900537E93 /* MainViewController.m */,
+				1DB3AB3F194EE32500537E93 /* ViewsTableViewController.h */,
+				1DB3AB40194EE32500537E93 /* ViewsTableViewController.m */,
+				1DB3AB42194EE33F00537E93 /* DetailsViewsViewController.h */,
+				1DB3AB43194EE33F00537E93 /* DetailsViewsViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1DB3AB3E194EE1EE00537E93 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				1DB3AB3A194EE0BA00537E93 /* Storyboard.storyboard */,
+				1DB3AB3C194EE1E100537E93 /* View.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +257,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB3AB12194EE05800537E93 /* InfoPlist.strings in Resources */,
+				1DB3AB3D194EE1E100537E93 /* View.storyboard in Resources */,
 				1DB3AB1A194EE05800537E93 /* Images.xcassets in Resources */,
+				1DB3AB3B194EE0BA00537E93 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,7 +279,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DB3AB18194EE05800537E93 /* AppDelegate.m in Sources */,
+				1DB3AB38194EE09900537E93 /* MainViewController.m in Sources */,
+				1DB3AB41194EE32500537E93 /* ViewsTableViewController.m in Sources */,
 				1DB3AB14194EE05800537E93 /* main.m in Sources */,
+				1DB3AB44194EE33F00537E93 /* DetailsViewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +405,7 @@
 				GCC_PREFIX_HEADER = "Semana3/Semana3-Prefix.pch";
 				INFOPLIST_FILE = "Semana3/Semana3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -376,6 +419,7 @@
 				GCC_PREFIX_HEADER = "Semana3/Semana3-Prefix.pch";
 				INFOPLIST_FILE = "Semana3/Semana3-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
